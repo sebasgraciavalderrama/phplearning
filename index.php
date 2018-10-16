@@ -26,6 +26,7 @@
     $array = array("Jose", "Manuel", "John" );
     foreach ($array as $loopdata) {
       echo "My name is ".$loopdata."<br>";
+      echo "<br>"
     }
 
    ?>
