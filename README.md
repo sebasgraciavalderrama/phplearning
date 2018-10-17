@@ -9,3 +9,6 @@ https://atom.io/
 
 Atom and GitHub tutorial:
 https://www.youtube.com/watch?v=7au7l1qa2so
+
+How to use GitHub and Atom (Another tutorial):
+https://github.com/sebasgraciavalderrama/phplearning.git
