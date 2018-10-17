@@ -11,7 +11,7 @@ Atom and GitHub tutorial:
 https://www.youtube.com/watch?v=7au7l1qa2so
 
 How to use GitHub and Atom (Another tutorial):
-https://github.com/sebasgraciavalderrama/phplearning.git
+https://vwannabe.com/2016/05/26/how-to-use-github-and-atom/
 
 Amazing PHP tutorials:
 1. Freecodecamp.org -  https://youtu.be/OK_JCtrrv-c
