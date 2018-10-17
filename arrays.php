@@ -7,27 +7,22 @@
   </head>
   <body>
   <?php
-    $x= 1;
-    while ($x < 5) {
-      echo "Hi there while!<br>";
-      $x++;
-    }
-    $x = 5;
-    echo "<br> ------ <br>";
-    do {
-      echo "Hi there do-while!<br>";
-      $x++;
-    } while ($x < 10);
-    echo "<br> ------ <br>";
-    for ($i=0; $i < 5; $i++) {
-      echo "Hi there for!<br>";
-    }
-    echo "<br> ------ <br>";
-    $array = array("Jose", "Manuel", "John" );
+
+    $array = array("Jose", "Manuel", "John", "Mariane");
+    echo $array[0];
+
+    $data1 = "Daniel";
+    $data2 = "Juan";
+    $data3 = "Panel";
+    $data4 = "Var";
+    $data5 = "Basic";
+
+
     foreach ($array as $loopdata) {
       echo "My name is ".$loopdata."<br>";
       echo "<br>"
     }
+
    ?>
   </body>
 </html>
