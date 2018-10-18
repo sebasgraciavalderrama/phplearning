@@ -1,8 +1,6 @@
 <?php
 include 'includes/newclass.inc.php';
  ?>
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,9 +9,9 @@ include 'includes/newclass.inc.php';
   </head>
   <body>
     <?php
-      $object = new NewClass();
-      unset($object);//Destroy the object
-      $object->getProperty();
+      $object = new NewClass;
+      echo $object;
+
 
       /*HOW TO DESTROY AN OBJECT BY USING UNSET() FUNCTION
       $object = new NewClass();
