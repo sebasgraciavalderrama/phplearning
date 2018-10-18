@@ -1,5 +1,6 @@
 <?php
-include 'includes/newclass.inc.php';
+//include 'includes/newclass.inc.php';
+include 'includes/users.inc.php';
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -9,6 +10,13 @@ include 'includes/newclass.inc.php';
   </head>
   <body>
     <?php
+      $first = "John";
+      $last = "Nielsen";
+      $hairColor = "Brown";
+      $eyeColor = "Blue";
+
+      $users = new Users($first, $last, $hairColor, $eyeColor);
+      echo $users->fullName();
 
       /* STATIC PROPERTIES AND STATIC METHODS
       echo NewClass::$static;//WHEN YOU CALL AN STATIC VAR USE THE $ IN ORDER TO CALL IT
