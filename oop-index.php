@@ -12,8 +12,14 @@ include 'includes/newclass.inc.php';
   <body>
     <?php
       $object = new NewClass();
+      unset($object);//Destroy the object
       $object->getProperty();
 
+      /*HOW TO DESTROY AN OBJECT BY USING UNSET() FUNCTION
+      $object = new NewClass();
+      unset($object);//Destroy the object
+      $object->getProperty();
+      */
 
       /* GETTS AND SETTERS
       $object->getProperty();
