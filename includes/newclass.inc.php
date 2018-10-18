@@ -1,11 +1,14 @@
 <?php
 
-class NewClass extends ParentClass {
+class NewClass{
   //Properties and Methods goes here
-  public function name(){
-    return $this->name;
+  public $data = "I am a property";
+
+  public function setNewProperty($newData){
+    $this->data = $newData;
+  }
+  public function getProperty (){
+    echo $this->data;
   }
 }
-
-
 ?>

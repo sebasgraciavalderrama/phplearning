@@ -1,8 +1,5 @@
 <?php
-include 'includes/parentclass.inc.php';
 include 'includes/newclass.inc.php';
-$object = new ParentClass;
-
  ?>
 
 
@@ -14,8 +11,24 @@ $object = new ParentClass;
   </head>
   <body>
     <?php
-      echo $object->name();
+      $object = new NewClass;
+      $object2 = new NewClass;
 
+
+      $object->getProperty();
+      echo "<br>";
+      $object->setNewProperty("This is new data!");
+      echo "<br>";
+      $object->getProperty();
+      echo "<br>";
+
+
+      $object2->getProperty();
+      echo "<br>";
+      $object2->setNewProperty("This is new data for object 2!");
+      echo "<br>";
+      $object2->getProperty();
+      echo "<br>";
      ?>
 
   </body>
