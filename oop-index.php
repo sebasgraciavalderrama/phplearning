@@ -11,10 +11,11 @@ include 'includes/newclass.inc.php';
   </head>
   <body>
     <?php
-      $object = new NewClass;
-      $object2 = new NewClass;
+      $object = new NewClass();
+      $object->getProperty();
 
 
+      /* GETTS AND SETTERS
       $object->getProperty();
       echo "<br>";
       $object->setNewProperty("This is new data!");
@@ -28,7 +29,7 @@ include 'includes/newclass.inc.php';
       $object2->setNewProperty("This is new data for object 2!");
       echo "<br>";
       $object2->getProperty();
-      echo "<br>";
+      echo "<br>";*/
      ?>
 
   </body>
