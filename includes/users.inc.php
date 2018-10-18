@@ -2,10 +2,10 @@
 
 class Users{
 
-  public $first = "Daniel";
-  public $last = "Nielse";
-  public $hairColor = "Brown";
-  public $eyeColor = "Blue";
+  private $first ;
+  private $last ;
+  private $hairColor ;
+  private $eyeColor ;
 
   public function __construct($first, $last, $hairColor, $eyeColor){
     $this->first=$first;
