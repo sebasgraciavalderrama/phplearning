@@ -1,5 +1,6 @@
 <?php
 include 'includes/dbh.pdo.inc.php';
+include 'includes/user.pdo.inc.php'; // both controller and view in this excercise
 
  ?>
 <!DOCTYPE html>
@@ -10,8 +11,8 @@ include 'includes/dbh.pdo.inc.php';
   </head>
   <body>
     <?php
-      $object = new Dbh;
-      $object->connect();
+      $object = new User;
+      echo $object->getUsersWithCountCheck();
      ?>
 
   </body>
