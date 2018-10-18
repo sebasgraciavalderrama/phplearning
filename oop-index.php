@@ -1,7 +1,7 @@
 <?php
 include 'includes/parentclass.inc.php';
 include 'includes/newclass.inc.php';
-$object = new NewClass;
+$object = new ParentClass;
 
  ?>
 
@@ -14,7 +14,7 @@ $object = new NewClass;
   </head>
   <body>
     <?php
-      echo $object->name;
+      echo $object->name();
 
      ?>
 

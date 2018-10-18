@@ -1,8 +1,8 @@
 <?php
 class ParentClass{
-  protected $name = "Hey there!";
-  function __construct(){
-    // code...
+  private $name = "Hey there!";
+  public function name(){
+    return $this->name;
   }
 }
 ?>
