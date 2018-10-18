@@ -4,6 +4,7 @@ class NewClass{
   //Properties and Methods goes here
   public $data = "I am a property";
   public $error = "This is the class called ".__CLASS__."!"; //__CLASS__ GIVES THE NAME OF THE CURRENT CLASS
+  public static $static = 0;
 
   public function __construct(){
     echo "This class has been instantiated";
@@ -12,6 +13,10 @@ class NewClass{
   public function __toString(){
     echo "toString method: ";
     return $this->error;
+  }
+
+  public static function staticMethod(){
+    return self::$static;//self is the same as $this, $ is used because is a static var
   }
 
   public function setNewProperty($newData){

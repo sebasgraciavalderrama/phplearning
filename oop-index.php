@@ -9,9 +9,11 @@ include 'includes/newclass.inc.php';
   </head>
   <body>
     <?php
-      $object = new NewClass;
-      echo $object;
 
+      /* STATIC PROPERTIES AND STATIC METHODS
+      echo NewClass::$static;//WHEN YOU CALL AN STATIC VAR USE THE $ IN ORDER TO CALL IT
+      echo NewClass::staticMethod();
+      */
 
       /*HOW TO DESTROY AN OBJECT BY USING UNSET() FUNCTION
       $object = new NewClass();
