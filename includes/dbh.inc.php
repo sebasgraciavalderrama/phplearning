@@ -4,7 +4,7 @@ since this file is purely php code it is no mandatory
 to write the closing tag ?>. The closing tag allows you to continue
 writing any type of language/code/html in the same file.
 */
-class dbh{
+class Dbh{
   private $db_server_name;
   private $db_username;
   private $db_password;
@@ -16,9 +16,9 @@ class dbh{
     $this->db_password = "";
     $this->db_name = "ooptutorial";
 
-    $conn = new mysqli();
+    $conn = new mysqli($this->db_server_name, $this->db_username,
+    $this->db_password, $this->db_name);
+    return $conn;
 
   }
 }
-
-$conn = mysqli_connect($db_server_name, $db_username, $db_password, $db_name);//string de conexion.
